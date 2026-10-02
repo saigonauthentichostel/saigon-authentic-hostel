@@ -1,0 +1,21 @@
+Delete these from the old repository before or immediately after handover:
+
+REQUIRED CLEANUP
+- vercel.json
+- data/image-manifest.json
+- data/site.json
+
+OPTIONAL UNUSED ASSET CLEANUP
+- assets/images/shower.webp
+- assets/images/shower-640.webp
+- assets/images/shower-960.webp
+- assets/images/shower-1280.webp
+- assets/images/shower-1600.webp
+- assets/images/shower-2048.webp
+
+Do NOT delete:
+- CNAME
+- .nojekyll
+- robots.txt
+- sitemap.xml
+- 404.html

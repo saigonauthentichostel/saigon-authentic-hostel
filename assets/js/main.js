@@ -54,28 +54,6 @@ function setupBookingFieldLabels(){
     });
   });
 }
-function setupExperienceImages(){
-  const imageMap={
-    'Morning Walking City Tour':['https://ogsaigon.com/assets/images/post-office-group.webp','Travelers exploring central Saigon'],
-    'Saigon Walking Experience':['https://ogsaigon.com/assets/images/post-office-group.webp','Travelers exploring central Saigon'],
-    'Evening Foodie Adventure':['https://ogsaigon.com/assets/images/dessert-group.webp','Travelers enjoying a local Saigon food experience'],
-    'Foodie Adventure':['https://ogsaigon.com/assets/images/dessert-group.webp','Travelers enjoying local Saigon food'],
-    'Cu Chi Tunnels':['https://ogsaigon.com/assets/images/duy-guiding.webp','Local guide with guests at the Cu Chi Tunnels'],
-    'Mekong Delta':['https://ogsaigon.com/assets/images/mekong-boat.webp','Travelers on a small boat in the Mekong Delta']
-  };
-  document.querySelectorAll('.card').forEach(card=>{
-    const title=card.querySelector('h3')?.textContent.trim();
-    const replacement=imageMap[title];
-    const img=card.querySelector('.card-media img');
-    if(!replacement||!img) return;
-    img.src=replacement[0];
-    img.alt=replacement[1];
-    img.removeAttribute('srcset');
-    img.removeAttribute('sizes');
-    img.loading='lazy';
-    img.decoding='async';
-  });
-}
 function injectUxPolish(){
   const style=document.createElement('style');
   style.textContent=`
@@ -114,4 +92,4 @@ function setupMobileWa(){
   window.addEventListener('scroll',update,{passive:true});
   window.addEventListener('resize',update);
 }
-document.addEventListener('DOMContentLoaded',()=>{injectUxPolish();setupDates();setupNav();setupWaLinks();setupBookingFieldLabels();setupBookingForms();setupCurrentNav();setupExperienceImages();setupMobileWa()});
+document.addEventListener('DOMContentLoaded',()=>{injectUxPolish();setupDates();setupNav();setupWaLinks();setupBookingFieldLabels();setupBookingForms();setupCurrentNav();setupMobileWa()});
