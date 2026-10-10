@@ -41,3 +41,15 @@
     overflow-x: clip;
   }
 }
+
+/* Choose Your Bed: one full-width room per row on phones only. */
+@media (max-width: 600px) {
+  .hostel-detail .room-list {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .hostel-detail .room-preview img {
+    display: block;
+    height: auto;
+  }
+}
