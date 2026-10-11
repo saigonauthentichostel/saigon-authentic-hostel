@@ -1,0 +1,134 @@
+/* Responsive repairs only; desktop v36 rules and brand assets stay unchanged. */
+@media (max-width: 950px) {
+  header.top a.logo {
+    flex-shrink: 0 !important;
+  }
+
+  header.top .mobile-menu {
+    display: block;
+    flex: 0 0 44px;
+    min-width: 44px;
+    min-height: 44px;
+  }
+
+  header.top .nav {
+    display: none;
+  }
+
+  header.top .nav.open {
+    display: flex;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    width: auto;
+    min-width: 0;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 20px 7vw;
+    background: var(--paper);
+    box-shadow: 0 12px 16px #0002;
+    max-height: calc(100dvh - 120px);
+    overflow-y: auto;
+  }
+
+  header.top .nav .nav-submenu a {
+    white-space: normal;
+  }
+
+  /* Clip only decorative leaves protruding from their own sections. */
+  .hero, .twohostels, .room-section, .feature, .life, .facilities, .review {
+    overflow-x: clip;
+  }
+}
+
+/* Compact footer only; retain its olive, fonts, content and official logo. */
+.footer {
+  padding: 28px 5vw 18px;
+}
+
+.footer .footergrid {
+  gap: 24px;
+}
+
+.footer .brand-bottom {
+  position: relative;
+}
+
+.footer .brand-bottom img {
+  display: block;
+}
+
+/* Repeat the original pixels solely to outline the lower wordmark in CSS. */
+.footer .brand-bottom::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 210px;
+  max-width: 100%;
+  aspect-ratio: 320 / 217;
+  background: url("official-logo-full.png") left top / 100% 100% no-repeat;
+  filter: drop-shadow(.35px 0 0 #fff9ee) drop-shadow(-.35px 0 0 #fff9ee)
+          drop-shadow(0 .35px 0 #fff9ee) drop-shadow(0 -.35px 0 #fff9ee);
+  clip-path: inset(74% -2px -2px -2px);
+  pointer-events: none;
+}
+
+.footer .scribble {
+  margin: 10px 0;
+}
+
+.footer .brand-bottom p {
+  margin-bottom: 0;
+}
+
+.footer .footerlinks {
+  padding-top: 0 !important;
+}
+
+.footer .footerlinks a {
+  margin: 6px 0 !important;
+}
+
+.footer h4 {
+  margin-bottom: 10px;
+}
+
+.footer .footergrid > div:last-child p {
+  margin-bottom: 10px;
+}
+
+.footer .cta {
+  margin: 5px 0;
+}
+
+.footer small {
+  margin-top: 22px;
+}
+
+@media (max-width: 900px) {
+  .footer {
+    padding: 26px 7vw 18px;
+  }
+
+  .footer .footergrid {
+    gap: 18px;
+  }
+
+  .footer .footerlinks a {
+    margin: 4px 0 !important;
+  }
+}
+
+/* Choose Your Bed: one full-width room per row on phones only. */
+@media (max-width: 600px) {
+  .hostel-detail .room-list {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .hostel-detail .room-preview img {
+    display: block;
+    height: auto;
+  }
+}
