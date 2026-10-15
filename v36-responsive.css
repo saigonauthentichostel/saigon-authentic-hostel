@@ -132,3 +132,12 @@
     height: auto;
   }
 }
+
+/* Centre the visible SA artwork, preserving its original file and layout box.
+   Source image: 896 x 716; alpha bounds y=77..716, centre=396.5.
+   Artwork is 38.5px below the image centre (358). With contain in the
+   existing square box, correction = -38.5/896 = -4.296875% of box height.
+   This scales with the existing 82px / 67px / 55px logo sizes. */
+header.top a.logo img.official-symbol {
+  transform: translateY(-4.296875%);
+}
