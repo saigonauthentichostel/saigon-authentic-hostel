@@ -1,0 +1,88 @@
+{
+  "implementation_scope": {
+    "airport-transfer.html": [
+      "Remove demo-only payment text"
+    ],
+    "full-day-cu-chi-and-mekong-delta.html": [
+      "Remove demo-only payment text"
+    ],
+    "full-day-mekong-delta.html": [
+      "Remove demo-only payment text",
+      "Breakfast and pickup from PDF",
+      "Cycling and local rides from PDF",
+      "Mekong lunch clarity",
+      "Mekong brochure schedule",
+      "Mekong inclusions faithful to brochure",
+      "Mekong brochure exclusions"
+    ],
+    "half-day-cu-chi-tunnels.html": [
+      "Remove demo-only payment text",
+      "Split Cu Chi options into two rows"
+    ],
+    "motorbike-street-food-tour.html": [
+      "Remove demo-only payment text",
+      "Ten iconic landmark names in motorbike itinerary"
+    ],
+    "walking-neighborhood-tour.html": [
+      "Remove demo-only payment text",
+      "Highlight rooftop beer as final itinerary stop"
+    ],
+    "index.html": [
+      "Sync walking tour rooftop highlight",
+      "Sync motorbike sightseeing scope",
+      "Sync Mekong details to card",
+      "Sync Mekong schedule to card",
+      "Alley Booking.com verified reviews update"
+    ],
+    "experiences.html": [
+      "Sync walking tour rooftop highlight",
+      "Sync motorbike sightseeing scope",
+      "Sync Mekong details to card",
+      "Sync Mekong schedule to card"
+    ],
+    "v37-itinerary.css": [
+      "Itinerary list/two line time responsive CSS"
+    ],
+    "saigon-authentic-hostel.html": [
+      "Hostel back link with exact restoration and section fallback"
+    ],
+    "saigon-authentic-alley-hostel.html": [
+      "Hostel back link with exact restoration and section fallback"
+    ],
+    "v37-sales.js": [
+      "Track return scroll for both hostel detail pages"
+    ],
+    "hostel-life.html": [
+      "Alley Booking.com verified reviews update"
+    ]
+  },
+  "review_checked": "2026-10-20",
+  "updated_reviews": {
+    "Saigon Authentic Alley Hostel / Booking.com": {
+      "score": "9.4/10",
+      "count": 833,
+      "source": "https://www.booking.com/hotel/vn/saigon-authentic-alley-hostel-free-breakfast-amp-gym.en-gb.html?came_from_hotel_review=1&keep_landing=1"
+    }
+  },
+  "reviews_preserved_pending_verified_increase": {
+    "SAH": {
+      "Google": 2045,
+      "Booking.com": 1717,
+      "Hostelworld": 385,
+      "Agoda": 1135
+    },
+    "SAAH": {
+      "Google": 1863,
+      "Hostelworld": 298,
+      "Agoda": 750
+    }
+  },
+  "pending_approval_proposals": [
+    "Combo Cu Chi & Mekong has 07:00–19:00 on website, while brochure says 07:30–19:00. Do not change without approval.",
+    "Brochure mentions free breakfast for Cu Chi and combo and drop-off; website detail does not consistently emphasize them. Approve a full inclusion audit before adding.",
+    "Website does not show tour group sizes/pricing tiers from brochure; current approved no-tour-prices policy preserved.",
+    "Brochure lists Motorbike local dinner including Vietnamese noodle soup or banh mi and sugar cane juice or beer; website broadly says dinner/drinks. Propose precise menu after approval.",
+    "Booking/Hostelworld/Agoda listings publicly suggest Alley has breakfast, but your existing hostel policy says Alley no breakfast. Requires your operational confirmation; do not change website based on outside copy.",
+    "Some tour descriptions mention supplied food/drinks not identically worded in brochure; propose cross-tour inclusions/exclusions checklist."
+  ]
+}

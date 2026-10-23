@@ -1,0 +1,5 @@
+SEO changes for offline v37 preview only.
+Unique page titles and meta descriptions were added to 13 active HTML pages.
+Draft sitemap.xml and robots.txt are NOT live; verify public paths before uploading.
+Google Search Console property verification and sitemap submission require owner access and live deployment.
+No changes were made on GitHub or the production website.

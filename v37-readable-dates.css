@@ -1,0 +1,13 @@
+/* v37 – readable on-screen dates, while retaining the native calendar picker and ISO form values. */
+.v37-readable-date{position:relative;box-sizing:border-box;display:flex;align-items:center;width:100%;min-width:0;min-height:42px;border-radius:inherit;cursor:pointer;isolation:isolate}
+.v37-readable-date-text{display:block;box-sizing:border-box;min-width:0;width:100%;pointer-events:none;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font:500 15px/1.4 'DM Sans',Arial,sans-serif;color:#423020;text-align:left}
+.v37-readable-date:not(.has-date) .v37-readable-date-text{color:#776d62}
+.v37-readable-date:focus-within{outline:2px solid #778b63;outline-offset:2px}
+.v37-readable-date input[type="date"]{position:absolute!important;inset:0!important;z-index:2!important;box-sizing:border-box!important;display:block!important;width:100%!important;height:100%!important;min-height:0!important;max-height:none!important;opacity:0!important;cursor:pointer!important;margin:0!important;padding:0!important;border:0!important}
+/* Compact booking bar dates; retain approved height, calendar symbol and grid. */
+#check-availability .v37-readable-date{height:20px;min-height:20px;width:100%;flex:1 1 auto}
+#check-availability .v37-readable-date-text{font-size:clamp(11px,.92vw,13.5px);font-weight:500;line-height:20px;letter-spacing:-.16px}
+/* Room enquiry and Local Experiences form dates use existing modal width. */
+#v37-room-form .v37-readable-date,#v37-enquiry-form .v37-readable-date{min-height:43px;max-width:100%;border:1px solid #bdad92;border-radius:9px;background:#fff;padding:0 12px}
+#v37-enquiry-form .v37-readable-date{border-color:#cec3b2}
+@media(max-width:950px){#check-availability .v37-readable-date-text{font-size:13.5px}}

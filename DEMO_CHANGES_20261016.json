@@ -1,0 +1,84 @@
+{
+  "demo_only": true,
+  "source": "Saigon_Authentic_Demo_v37_REFINED",
+  "production_modified": false,
+  "modified_files": {
+    "index.html": {
+      "before": 125401,
+      "after": 125028
+    },
+    "experiences.html": {
+      "before": 99506,
+      "after": 98633
+    },
+    "walking-neighborhood-tour.html": {
+      "before": 96644,
+      "after": 96461
+    },
+    "motorbike-street-food-tour.html": {
+      "before": 87805,
+      "after": 87622
+    },
+    "airport-transfer.html": {
+      "before": 85534,
+      "after": 85431
+    },
+    "family-cooking-experience.html": {
+      "before": 96169,
+      "after": 96124
+    },
+    "find-us.html": {
+      "before": 93253,
+      "after": 93150
+    },
+    "full-day-cu-chi-and-mekong-delta.html": {
+      "before": 95799,
+      "after": 95616
+    },
+    "full-day-mekong-delta.html": {
+      "before": 95985,
+      "after": 95802
+    },
+    "half-day-cu-chi-tunnels.html": {
+      "before": 96236,
+      "after": 96053
+    },
+    "hostel-life.html": {
+      "before": 95346,
+      "after": 95243
+    },
+    "saigon-authentic-alley-hostel.html": {
+      "before": 92702,
+      "after": 92599
+    },
+    "saigon-authentic-hostel.html": {
+      "before": 93261,
+      "after": 93158
+    },
+    "saigon-morning-city-tour.html": {
+      "before": 92892,
+      "after": 92789
+    },
+    "stay.html": {
+      "before": 93060,
+      "after": 92957
+    },
+    "v37-sales.js": {
+      "before": 3067,
+      "after": 5174
+    },
+    "v37-visual-refresh.css": {
+      "before": 13715,
+      "after": 15200
+    }
+  },
+  "schedules": {
+    "walking": "Tue, Thu, Sat, Sun / 6PM-8:30PM",
+    "motorbike": "Mon, Wed, Fri / 6PM-8:30PM"
+  },
+  "listed_cards": 6,
+  "retired_cooking_page_preserved": true,
+  "font_labels": "DM Sans 800 12px / .18em consistent",
+  "review_counts_unmodified": true,
+  "limits": "Actual tour schedules shown as requested; verify before production release."
+}
