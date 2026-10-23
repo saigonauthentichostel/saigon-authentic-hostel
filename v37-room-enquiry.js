@@ -1,0 +1,18 @@
+(()=>{'use strict';
+ const modal=document.getElementById('v37-room-overlay');if(!modal)return;
+ const trigger=document.querySelector('[data-v37-room-enquiry]');if(!trigger)return;
+ const form=document.getElementById('v37-room-form');const checkin=document.getElementById('v37-room-checkin');const checkout=document.getElementById('v37-room-checkout');
+ const guests=document.getElementById('v37-room-guests');const closeBtn=document.getElementById('v37-room-close');
+ const today=()=>{const d=new Date();return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`};
+ const formatDate=v=>new Date(v+'T12:00:00').toLocaleDateString('en-GB',{day:'numeric',month:'long',year:'numeric'});
+ const close=()=>{modal.hidden=true;document.body.style.overflow='';trigger.focus();};
+ trigger.addEventListener('click',e=>{e.preventDefault();checkin.min=today();checkout.min=today();modal.hidden=false;document.body.style.overflow='hidden';checkin.focus();});
+ checkin.addEventListener('change',()=>{checkout.min=checkin.value||today();if(checkout.value&&checkout.value<=checkin.value)checkout.value='';});
+ checkout.addEventListener('change',()=>checkout.setCustomValidity(''));
+ closeBtn.addEventListener('click',close);modal.addEventListener('click',e=>{if(e.target===modal)close()});document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!modal.hidden)close()});
+ form.addEventListener('submit',e=>{e.preventDefault();if(!form.reportValidity())return;if(checkout.value<=checkin.value){checkout.setCustomValidity('Check-out must be after check-in.');checkout.reportValidity();return;}checkout.setCustomValidity('');
+ const hostel=trigger.dataset.v37RoomEnquiry;
+ const message=`Xin Chào Saigon Authentic team! 👋\n\nI'd love to check room availability for my stay.\n\nHostel: ${hostel}\nCheck-in: ${formatDate(checkin.value)}\nCheck-out: ${formatDate(checkout.value)}\nGuests: ${guests.value}\n\nCould you please let me know which rooms are available and their rates?\n\nThank you so much! I look forward to hearing from you.`;
+ window.open('https://wa.me/84971978439?text='+encodeURIComponent(message),'_blank','noopener');
+ });
+})();

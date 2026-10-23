@@ -1,17 +1,42 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url><loc>https://www.saigonauthentichostel.com/</loc></url>
-<url><loc>https://www.saigonauthentichostel.com/stay.html</loc></url>
-<url><loc>https://www.saigonauthentichostel.com/saigon-authentic-hostel.html</loc></url>
-<url><loc>https://www.saigonauthentichostel.com/saigon-authentic-alley-hostel.html</loc></url>
-<url><loc>https://www.saigonauthentichostel.com/experiences.html</loc></url>
-<url><loc>https://www.saigonauthentichostel.com/walking-neighborhood-tour.html</loc></url>
-<url><loc>https://www.saigonauthentichostel.com/motorbike-street-food-tour.html</loc></url>
-<url><loc>https://www.saigonauthentichostel.com/family-cooking-experience.html</loc></url>
-<url><loc>https://www.saigonauthentichostel.com/saigon-morning-city-tour.html</loc></url>
-<url><loc>https://www.saigonauthentichostel.com/half-day-cu-chi-tunnels.html</loc></url>
-<url><loc>https://www.saigonauthentichostel.com/full-day-mekong-delta.html</loc></url>
-<url><loc>https://www.saigonauthentichostel.com/full-day-cu-chi-and-mekong-delta.html</loc></url>
-<url><loc>https://www.saigonauthentichostel.com/hostel-life.html</loc></url>
-<url><loc>https://www.saigonauthentichostel.com/find-us.html</loc></url>
+  <url>
+    <loc>https://www.saigonauthentichostel.com/</loc>
+  </url>
+  <url>
+    <loc>https://www.saigonauthentichostel.com/stay.html</loc>
+  </url>
+  <url>
+    <loc>https://www.saigonauthentichostel.com/saigon-authentic-hostel.html</loc>
+  </url>
+  <url>
+    <loc>https://www.saigonauthentichostel.com/saigon-authentic-alley-hostel.html</loc>
+  </url>
+  <url>
+    <loc>https://www.saigonauthentichostel.com/experiences.html</loc>
+  </url>
+  <url>
+    <loc>https://www.saigonauthentichostel.com/walking-neighborhood-tour.html</loc>
+  </url>
+  <url>
+    <loc>https://www.saigonauthentichostel.com/motorbike-street-food-tour.html</loc>
+  </url>
+  <url>
+    <loc>https://www.saigonauthentichostel.com/half-day-cu-chi-tunnels.html</loc>
+  </url>
+  <url>
+    <loc>https://www.saigonauthentichostel.com/full-day-mekong-delta.html</loc>
+  </url>
+  <url>
+    <loc>https://www.saigonauthentichostel.com/full-day-cu-chi-and-mekong-delta.html</loc>
+  </url>
+  <url>
+    <loc>https://www.saigonauthentichostel.com/airport-transfer.html</loc>
+  </url>
+  <url>
+    <loc>https://www.saigonauthentichostel.com/hostel-life.html</loc>
+  </url>
+  <url>
+    <loc>https://www.saigonauthentichostel.com/find-us.html</loc>
+  </url>
 </urlset>

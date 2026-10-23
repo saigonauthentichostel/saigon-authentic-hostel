@@ -1,0 +1,12 @@
+/* Hostel page availability: only triggered by direct CTA. */
+.v37-room-overlay[hidden]{display:none!important}
+.v37-room-overlay{position:fixed;inset:0;z-index:100000;background:rgba(24,32,22,.70);display:grid;place-items:center;padding:18px}
+.v37-room-dialog{box-sizing:border-box;position:relative;width:min(95vw,490px);max-height:90vh;overflow:auto;background:#fff9ed;color:#394531;border:1px solid #dbc69f;border-radius:20px;box-shadow:0 12px 45px #18201760;padding:28px 25px}
+.v37-room-dialog h2{font:normal 29px/1.13 Georgia,serif;margin:0 35px 8px 0;color:#344b39}
+.v37-room-dialog p{font-size:14px;line-height:1.5;margin:0 0 15px}
+.v37-room-dialog label{font-size:13px;font-weight:700;display:block;margin:12px 0 4px}
+.v37-room-dialog input,.v37-room-dialog select{box-sizing:border-box;display:block;width:100%;padding:12px;border:1px solid #bdad92;border-radius:9px;background:#fff;color:#293a2a;font:inherit;font-size:16px;min-width:0}
+.v37-room-fields{display:grid;grid-template-columns:1fr 1fr;gap:13px}
+.v37-room-submit{width:100%;border:0;background:#687b55;border-radius:10px;color:white;cursor:pointer;font:700 15px 'DM Sans',Arial,sans-serif;padding:14px;margin-top:19px}
+.v37-room-close{position:absolute;right:13px;top:10px;background:none;border:0;color:#43513e;font-size:29px;cursor:pointer;width:40px;height:40px}
+@media(max-width:460px){.v37-room-dialog{padding:22px 18px}.v37-room-fields{grid-template-columns:1fr}}

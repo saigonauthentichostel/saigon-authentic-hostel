@@ -1,0 +1,55 @@
+/* v37 itinerary preview: additive styles only; no existing layout or typography changed. */
+.v37-breadcrumbs{display:flex;align-items:baseline;flex-wrap:wrap;gap:7px 9px;margin:0 0 17px;
+  font:700 13px/1.6 'DM Sans',Arial,sans-serif;color:#6c5b4d;max-width:100%;}
+.v37-breadcrumbs a{color:#97663e;text-decoration:none;text-underline-offset:4px;}
+.v37-breadcrumbs a:hover,.v37-breadcrumbs a:focus-visible{text-decoration:underline;}
+.v37-breadcrumbs [aria-current="page"]{color:#64574a;font-weight:600;overflow-wrap:anywhere;}
+.v37-breadcrumbs .v37-bc-separator{color:#aa957b;font-weight:400;}
+.v37-itinerary{margin:0 0 26px;}
+.v37-itinerary.v37-whitepanel{background:#fff9ed;border:1px solid #ebdec9;border-radius:20px;padding:29px;}
+.v37-itinerary .v37-itinerary-kicker{font:800 12px/1.45 'DM Sans',Arial,sans-serif;
+  letter-spacing:.18em;color:#97663e;text-transform:uppercase;margin:0 0 6px;}
+.v37-itinerary h2{font:400 31px/1.2 'DM Serif Display',Georgia,serif;color:#35271f;margin:0 0 10px;}
+.v37-itinerary .v37-itinerary-intro{font:400 15px/1.7 'DM Sans',sans-serif;
+  color:#6c5b4d;margin:0 0 25px;}
+.v37-timeline{margin:0;padding:0;list-style:none;counter-reset:itinerary;}
+.v37-timeline > li{position:relative;display:grid;grid-template-columns:42px minmax(0,1fr);
+  column-gap:15px;padding:0 0 25px;margin:0;counter-increment:itinerary;min-width:0;}
+.v37-timeline > li:last-child{padding-bottom:0;}
+.v37-timeline > li:not(:last-child)::before{content:"";position:absolute;top:39px;bottom:2px;left:20px;
+  width:2px;background:#bec5b4;}
+.v37-timeline > li::after{content:counter(itinerary,decimal-leading-zero);grid-column:1;grid-row:1;
+  width:40px;height:40px;border-radius:50%;background:#5d6e54;color:#fffaf0;
+  font:800 12px/40px 'DM Sans',sans-serif;text-align:center;z-index:1;}
+.v37-itinerary-step{grid-column:2;grid-row:1;min-width:0;padding-top:2px;}
+.v37-itinerary-step strong{display:block;color:#35271f;font:700 16px/1.4 'DM Sans',Arial,sans-serif;margin:0 0 3px;}
+.v37-itinerary-step p{color:#6c5b4d;font:400 14px/1.65 'DM Sans',Arial,sans-serif;margin:0;}
+.v37-itinerary-note{margin:22px 0 0!important;padding:11px 13px;border-radius:10px;
+  background:#f5ead7;color:#776650!important;font:400 12px/1.6 'DM Sans',Arial,sans-serif!important;}
+@media(max-width:600px){.v37-itinerary.v37-whitepanel{padding:22px 19px;}
+  .v37-itinerary h2{font-size:27px;}
+  .v37-timeline > li{grid-template-columns:38px minmax(0,1fr);gap:11px;padding-bottom:22px;}
+  .v37-timeline > li::after{width:36px;height:36px;line-height:36px;}
+  .v37-timeline > li:not(:last-child)::before{left:18px;top:35px;}}
+
+
+/* v37 review: consistent readable prose, section headings and breadcrumbs on tour pages. */
+body .v37-detailpage .v37-breadcrumbs {font-size:16px!important;line-height:1.65!important;}
+body .v37-detailpage .v37-itinerary h2 {font-size:clamp(30px,2.7vw,34px)!important;}
+body .v37-detailpage .v37-itinerary .v37-itinerary-intro,
+body .v37-detailpage .v37-itinerary .v37-itinerary-step p {
+  font-size:17px!important;line-height:1.7!important;
+}
+body .v37-detailpage .v37-itinerary .v37-itinerary-step strong {font-size:17px!important;}
+body .v37-detailpage .v37-itinerary .v37-itinerary-note {font-size:16px!important;}
+@media(max-width:650px){
+  body .v37-detailpage .v37-breadcrumbs {font-size:15px!important;}
+  body .v37-detailpage .v37-itinerary .v37-itinerary-intro,
+  body .v37-detailpage .v37-itinerary .v37-itinerary-step p {font-size:16px!important;}
+}
+
+/* v37 Oct 20 approved content layout refinements only */
+.v37-time-option{display:block;line-height:1.6}
+.v37-landmark-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:24px;row-gap:5px;margin:12px 0 0;padding-left:22px;font-size:0.96em}
+.v37-landmark-list li{padding-left:2px;break-inside:avoid}
+@media(max-width:600px){.v37-landmark-list{grid-template-columns:1fr;row-gap:4px}}

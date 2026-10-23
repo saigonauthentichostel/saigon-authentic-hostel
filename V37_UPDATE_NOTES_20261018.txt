@@ -1,0 +1,6 @@
+SAIGON AUTHENTIC HOSTEL – v37 demo refinement (18 Oct 2026, review only)
+Base: uploaded Saigon_Authentic_v37_Find_Us_Map_Aligned_Full_Demo(2).zip and working v37 revision.
+1) Hostel field: replace previous bed icon (looked like a car) with a recognizable outlined hostel building, with windows and entrance door. Existing text, form, spacing and behavior preserved.
+2) Demo label: suppress v37 DEMO · NOT LIVE corner label to avoid blocking Guests on mobile, without changing live website content.
+All remaining approved v37 design, pages, photos, tour information, map settings and scripts are unchanged.
+No GitHub changes, merges or production deploys. Await owner visual approval.

@@ -1,0 +1,405 @@
+
+/* v37 revision — demo-only. Color and component values copied from user's liked tour demo. */
+:root{--v37-cream:#f5ead7;--v37-paper:#fff9ed;--v37-paper2:#faf2e3;--v37-ink:#35271f;--v37-brown:#71503a;--v37-accent:#97663e;--v37-olive:#5d6e54;--v37-line:#e5d6bc;--v37-footer:#617055;--v37-shadow:0 13px 36px #3b2a171a}
+html,body{background:var(--v37-cream)!important;color:var(--v37-ink)}
+/* Keep the original v36 hero structure/texture; recolor only its cream palette. */
+.paper{background:radial-gradient(ellipse at 8% 30%,#faf2e3 0,transparent 35%),linear-gradient(145deg,#fff9ed,#f5ead7)}
+body .hero .buttons a,body .hero a.subtle{background:var(--v37-olive)!important;color:white!important;border-radius:999px!important;padding:13px 22px!important;font-weight:700!important;display:inline-flex!important;align-items:center;justify-content:center;min-height:46px;text-decoration:none}
+body .hero .buttons a:hover{background:#4d5f44!important}
+.v37-title-accent{color:var(--v37-accent);font-style:italic}
+.v37-showcase{background:#f6eddd;padding:80px 0 86px;scroll-margin-top:110px}
+.v37-wrap{max-width:1230px;margin:0 auto;padding:0 34px}
+.v37-eyebrow{font:800 12px/1.4 'DM Sans',Arial,sans-serif;letter-spacing:.18em;color:#9d6d44;text-transform:uppercase}
+.v37-heading-row{display:flex;justify-content:space-between;align-items:end;gap:25px;margin:0 0 30px}
+.v37-heading-row h2{font:400 clamp(36px,4.2vw,58px)/1.14 'DM Serif Display',Georgia,serif;letter-spacing:-.028em;color:var(--v37-ink);margin:10px 0 0}
+.v37-heading-row p{max-width:370px;font-size:16px;color:#74665a;line-height:1.6;margin:0}
+.v37-showcase-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:25px}
+.v37-bigcard{background:var(--v37-paper);padding:14px;border-radius:24px;box-shadow:0 7px 23px #3223120d;display:flex;flex-direction:column;overflow:hidden;min-width:0}
+.v37-bigcard .v37-photo{height:295px;overflow:hidden;border-radius:15px;position:relative;display:block}
+.v37-bigcard .v37-photo img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s}
+.v37-bigcard:hover .v37-photo img{transform:scale(1.035)}
+.v37-photo-tag{position:absolute;left:14px;top:14px;background:#fff6eadd;border-radius:100px;padding:7px 13px;color:#624932;font-size:11px;font-weight:800;letter-spacing:.07em}
+.v37-card-body{padding:20px 14px 18px;display:flex;flex-direction:column;flex:1}
+.v37-bigcard h3{font:400 clamp(27px,2.25vw,34px)/1.14 'DM Serif Display',Georgia,serif;margin:4px 0 10px;color:var(--v37-ink);letter-spacing:-.018em;min-height:0}
+.v37-meta{color:#81725d;font:800 12px/1.55 'DM Sans',sans-serif;letter-spacing:.03em}
+.v37-card-body>p{color:#665c51;font-size:15px;line-height:1.62;margin:12px 0 14px;flex:1}
+.v37-facts{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0 22px}
+.v37-fact{color:#5d5549;background:#fcf5ea;border:1px solid #e5d8c4;border-radius:999px;padding:6px 10px;font:700 12px/1.4 'DM Sans',sans-serif}
+.v37-actions{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-top:auto}
+.v37-btn{border:0;border-radius:999px;background:var(--v37-olive);color:#fff!important;padding:13px 22px;font:800 14px/1.3 'DM Sans',Arial,sans-serif;display:inline-flex;gap:8px;align-items:center;justify-content:center;min-height:48px;cursor:pointer;text-decoration:none!important}
+.v37-btn:hover{background:#4d5f44}
+.v37-text-link{font:800 14px/1.3 'DM Sans',sans-serif;color:var(--v37-accent)!important;text-decoration:none!important}
+.v37-mini-divider{height:1px;background:#dfc9a8;margin:32px 0 28px}
+.v37-subtitle{font:400 clamp(29px,3.4vw,42px)/1.18 'DM Serif Display',serif;margin:0 0 22px;color:var(--v37-ink)}
+.v37-showcase-note{color:#786751;font-size:14px;text-align:center;margin:28px 0 0;line-height:1.55}
+.v37-how{background:var(--v37-paper);padding:84px 0;}
+.v37-how h2{font:400 clamp(36px,4.2vw,58px)/1.14 'DM Serif Display',Georgia,serif;letter-spacing:-.028em;color:var(--v37-ink);margin:10px 0 30px}
+.v37-steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.v37-step{border-top:2px solid #d3bda2;padding:20px 14px 6px}
+.v37-step .v37-no{font:400 42px/1 Caveat,cursive;color:#a3784e}
+.v37-step h3{font:400 25px/1.2 'DM Serif Display',serif;margin:8px 0 10px;color:var(--v37-ink)}
+.v37-step p{font:400 15px/1.64 'DM Sans',sans-serif;color:#6d6154;margin:0}
+/* Footer closely follows original demo, with user's approved Quick Links restored. */
+.v37-footer{background:var(--v37-footer);color:#fff8ed;padding:47px 0 31px}
+.v37-footer .v37-footer-inner{display:grid;grid-template-columns:minmax(240px,1.25fr) minmax(150px,.8fr) minmax(230px,1fr);align-items:start;gap:34px}
+.v37-footer .v37-footer-name{font:400 32px/1.25 Caveat,cursive;color:#f4d9a3;margin:0}
+.v37-footer p{font:400 13px/1.6 'DM Sans',Arial,sans-serif;color:#eae5d9;margin:10px 0}
+.v37-footer a{font:600 13px/1.55 'DM Sans',Arial,sans-serif;color:white;text-decoration:none;display:inline-block}
+.v37-footer a:hover{text-decoration:underline}
+.v37-footer h4{font:800 13px/1.5 'DM Sans',Arial,sans-serif;margin:0 0 8px;color:#fff8ed;letter-spacing:.02em}
+.v37-footer .v37-footer-links{display:flex;flex-direction:column;align-items:flex-start;gap:5px}
+.v37-footer .v37-footer-bottom{font-size:11px;border-top:1px solid #ffffff40;padding-top:22px;margin-top:20px;color:#e8eadf;line-height:1.5}
+/* Detail pages: demo's large hero + photo, booking panel, structured info, FAQ */
+.v37-detailpage{font-family:'DM Sans',Arial,sans-serif;color:var(--v37-ink);padding:45px 0 92px;background:var(--v37-cream)}
+.v37-detailcrumb{font:700 13px 'DM Sans',sans-serif;color:var(--v37-accent);text-decoration:none}
+.v37-detail-hero{display:grid;grid-template-columns:1fr 1fr;gap:38px;align-items:center;margin:18px 0 48px}
+.v37-detail-hero h1{font:400 clamp(45px,5.7vw,73px)/1.1 'DM Serif Display',Georgia,serif;letter-spacing:-.04em;margin:12px 0 19px;color:var(--v37-ink)}
+.v37-detail-hero p{font:400 18px/1.65 'DM Sans',sans-serif;color:#65594e;margin:0 0 14px}
+.v37-detail-img{padding:11px;background:#fff8e9;border-radius:20px;box-shadow:var(--v37-shadow)}
+.v37-detail-img img{width:100%;height:380px;object-fit:cover;border-radius:14px;display:block}
+.v37-detaillayout{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(280px,.75fr);gap:40px;align-items:start}
+.v37-whitepanel{background:var(--v37-paper);border:1px solid #ebdec9;border-radius:20px;padding:28px}
+.v37-detailpage h2{font:400 31px/1.2 'DM Serif Display',serif;margin:4px 0 12px;color:var(--v37-ink)}
+.v37-detail-block{margin:0 0 32px}
+.v37-detail-block p{font:400 15px/1.75 'DM Sans',sans-serif;color:#6c5b4d}
+.v37-detail-block ul{padding-left:20px;font:400 15px/1.8 'DM Sans',sans-serif;color:#6c5b4d}
+.v37-detail-block li{margin-bottom:7px}
+.v37-detail-gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.v37-detail-gallery img{width:100%;height:175px;object-fit:cover;border-radius:11px;display:block}
+.v37-booking{position:sticky;top:118px;background:#f2e7d3;border:1px solid #d9c7ac;border-radius:20px;padding:25px;box-shadow:0 12px 28px #40301812}
+.v37-booking h3{font:400 29px/1.2 'DM Serif Display',serif;margin:8px 0 12px}
+.v37-booking p{font-size:14px;color:#6b5c4e;line-height:1.63}
+.v37-booking .v37-btn{width:100%;margin:12px 0}
+.v37-booking small{font-size:12px;color:#837767;line-height:1.6;display:block}
+.v37-highlightrow{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.v37-highlighttile{background:#f4e9d5;border-radius:12px;padding:15px}
+.v37-highlighttile strong{display:block;font-weight:800;color:#6e4e37;font-size:14px;line-height:1.35}
+.v37-highlighttile p{margin:7px 0 0!important;font-size:13px!important;line-height:1.55!important}
+.v37-faq details{border-top:1px solid #dfceb3;padding:14px 0}
+.v37-faq summary{cursor:pointer;font:700 15px 'DM Sans',sans-serif;color:#4c4032}
+.v37-faq details p{padding:9px 0 0;font-size:14px}
+.v37-mobilecta{display:none}
+/* Inquiry modal */
+.v37-overlay{position:fixed;inset:0;background:#201c19ad;z-index:5100;display:none;justify-content:center;align-items:center;padding:18px;overflow-y:auto}
+.v37-overlay.open{display:flex}
+.v37-dialog{width:min(540px,100%);max-height:90dvh;overflow-y:auto;border-radius:22px;padding:28px;background:#fff9ed;box-shadow:0 15px 65px #0006;position:relative;color:#35271f}
+.v37-dialog h2{font:400 34px/1.15 'DM Serif Display',serif;margin:0 40px 8px 0}
+.v37-dialog p{font-size:14px;color:#74665a;line-height:1.6}
+.v37-close{position:absolute;right:15px;top:12px;border:0;border-radius:50%;width:40px;height:40px;font-size:24px;background:#f0e4d1;cursor:pointer}
+.v37-formrow{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.v37-field{margin:12px 0}
+.v37-field label{display:block;font:800 12px 'DM Sans',sans-serif;color:#674b33;margin-bottom:7px}
+.v37-field input,.v37-field select,.v37-field textarea{width:100%;min-height:45px;border:1px solid #cdbc9e;border-radius:10px;background:white;color:#312920;font:14px 'DM Sans',sans-serif;padding:10px 12px}
+.v37-field textarea{min-height:69px;resize:vertical}
+.v37-reviewmsg{white-space:pre-wrap;font:13px/1.6 'DM Sans',sans-serif;background:#f5eadb;border-radius:12px;padding:13px;border:1px solid #deccb2;max-height:240px;overflow:auto}
+.v37-modalactions{display:flex;gap:12px;flex-wrap:wrap;margin-top:12px}
+.v37-formnote{font:12px/1.55 'DM Sans',sans-serif;color:#74665b;margin-top:10px}
+.v37-demo-corner{position:fixed;bottom:12px;left:12px;z-index:4999;background:#3b3127e8;color:#fff7e7;border-radius:30px;padding:7px 12px;font:700 10px 'DM Sans',sans-serif;pointer-events:none;letter-spacing:.07em}
+@media(max-width:950px){.v37-footer .v37-footer-inner{grid-template-columns:1fr 1fr}.v37-footer .v37-footer-inner>div:last-child{grid-column:1/-1}.v37-heading-row{align-items:start;flex-direction:column}.v37-detail-hero{grid-template-columns:1fr}.v37-detaillayout{grid-template-columns:1fr}.v37-booking{position:static}}
+@media(max-width:650px){.v37-wrap{padding:0 5vw}.v37-showcase{padding:60px 0}.v37-showcase-grid{grid-template-columns:1fr;gap:19px}.v37-bigcard .v37-photo{height:240px}.v37-card-body{padding:15px 9px 13px}.v37-heading-row h2{font-size:40px}.v37-how{padding:62px 0}.v37-steps{grid-template-columns:1fr;gap:15px}.v37-footer .v37-footer-inner{grid-template-columns:1fr}.v37-footer .v37-footer-inner>div:last-child{grid-column:auto}.v37-detailpage{padding-top:28px;padding-bottom:125px}.v37-detail-hero{gap:20px}.v37-detail-hero h1{font-size:48px}.v37-detail-img img{height:270px}.v37-whitepanel{padding:19px}.v37-detail-gallery{grid-template-columns:repeat(2,1fr)}.v37-detail-gallery img{height:130px}.v37-highlightrow{grid-template-columns:1fr}.v37-mobilecta{position:fixed;left:0;right:0;bottom:0;z-index:4500;display:flex;align-items:center;justify-content:space-between;gap:10px;padding:8px 13px max(9px,env(safe-area-inset-bottom));background:#fff8edde;border-top:1px solid #d9c9ae;backdrop-filter:blur(12px)}.v37-mobilecta span{font:800 12px 'DM Sans',sans-serif;color:#67503e}.v37-mobilecta .v37-btn{font-size:12px;min-height:44px;padding:11px 12px}.v37-formrow{grid-template-columns:1fr}.v37-overlay{padding:8px}.v37-dialog{padding:24px 17px}.v37-demo-corner{bottom:70px;font-size:9px}}
+
+/* Requested v37 refinement only: restore original local-tours demo heading colors. */
+.v37-heading-row h2,
+.v37-bigcard h3,
+.v37-subtitle,
+.v37-detail-hero h1 {
+  color: #35271f !important; /* Exact original standalone demo --ink */
+}
+
+/* Original standalone tour-demo content modules: scoped to the newly restored sections. */
+.v37-demo-section .white-panel {
+  background:#fff9ed;
+  border:1px solid #ebdec9;
+  border-radius:20px;
+  padding:28px;
+}
+.v37-demo-section {margin:0 0 25px;}
+.v37-demo-section .eyebrow {
+  font:800 12px/1.45 'DM Sans',Arial,sans-serif;
+  letter-spacing:.18em;
+  color:#9d6d44;
+  text-transform:uppercase;
+  margin-bottom:6px;
+}
+.v37-demo-section h2 {
+  font:400 31px/1.17 'DM Serif Display',Georgia,serif;
+  margin:4px 0 12px;
+  color:#35271f !important;
+}
+.v37-demo-section h3 {
+  font:400 24px/1.2 'DM Serif Display',Georgia,serif;
+  margin:16px 0 9px;
+  color:#35271f !important;
+}
+.v37-demo-section .info-para {font:400 15px/1.75 'DM Sans',Arial,sans-serif;color:#6f6254;}
+.v37-demo-section .inclusions {
+  display:grid;
+  grid-template-columns:minmax(0,1fr) minmax(0,1fr);
+  gap:10px;
+}
+.v37-demo-section .mini-info {
+  padding:12px 14px;
+  border-radius:12px;
+  background:#f4e9d5;
+  font:400 14px/1.55 'DM Sans',Arial,sans-serif;
+  color:#584d42;
+  min-width:0;
+  overflow-wrap:break-word;
+}
+.v37-demo-section .small-title {
+  font:800 12px/1.35 'DM Sans',Arial,sans-serif;
+  letter-spacing:.11em;
+  color:#9c744a;
+  margin-bottom:3px;
+}
+.v37-demo-section .bullets {padding-left:20px;color:#6c5b4d;line-height:1.9;}
+.v37-demo-section .disclaimer {border-left:4px solid #b28c5f;background:#f8e9d3;padding:13px 16px;font-size:13px;color:#7b634d;border-radius:7px;}
+.v37-demo-section .qa {border-top:1px solid #dfceb3;padding:15px 0;}
+.v37-demo-section .qa summary {cursor:pointer;font:700 15px/1.45 'DM Sans',Arial,sans-serif;color:#4c4032;}
+.v37-demo-section .qa p {color:#776b5e;padding-top:9px;font-size:14px;line-height:1.7;margin:0;}
+.v37-demo-section .v37-source-extra {margin:17px 0 0;}
+.v37-demo-section .v37-source-extra h3 {font-size:21px;}
+.v37-demo-section .v37-source-extra ul {margin:6px 0 0;padding-left:20px;color:#6c5b4d;font-size:14px;line-height:1.7;}
+@media (max-width:650px) {
+  .v37-demo-section .white-panel {padding:19px;}
+  .v37-demo-section .inclusions {grid-template-columns:minmax(0,1fr) minmax(0,1fr);}
+  .v37-demo-section h2 {font-size:29px;}
+}
+@media (max-width:370px) {
+  .v37-demo-section .inclusions {grid-template-columns:1fr;}
+}
+
+
+/* v37 owner revisions (demo only): consistent small eyebrow labels across approved sections. */
+.twohostels .stamp,
+.room-section .stamp,
+.v37-showcase .v37-heading-row .v37-eyebrow {
+  font:800 12px/1.4 'DM Sans',Arial,sans-serif!important;
+  letter-spacing:.18em!important;
+  color:#9d6d44!important;
+  text-transform:uppercase!important;
+}
+/* Add the requested Hostel dropdown without changing the existing field styling. */
+#check-availability.booking-bar{
+  grid-template-columns:minmax(190px,1.3fr) minmax(132px,1fr) minmax(132px,1fr) minmax(115px,.8fr) minmax(145px,.93fr)!important;
+}
+#check-availability .booking-cell.is-hostel .booking-field{min-width:0!important;}
+#check-availability .booking-cell.is-hostel select{
+  min-width:0;width:100%;max-width:100%;
+  font:600 14px/1.1 'DM Sans',Arial,sans-serif;
+}
+@media(max-width:950px){
+  #check-availability.booking-bar{grid-template-columns:repeat(2,minmax(0,1fr))!important;}
+  #check-availability.booking-bar .booking-submit{grid-column:1/-1!important;}
+}
+@media(max-width:600px){
+  #check-availability.booking-bar{grid-template-columns:minmax(0,1fr)!important;}
+  #check-availability.booking-bar .booking-submit{grid-column:1/-1!important;}
+}
+/* Requested manual line breaks on the two primary tour cards. */
+.v37-bigcard[data-v37-tour-card="walking"] h3,
+.v37-bigcard[data-v37-tour-card="motorbike"] h3{overflow-wrap:normal;}
+@media(max-width:650px){
+ .v37-bigcard[data-v37-tour-card="motorbike"] h3{font-size:26px;}
+}
+
+
+/* v37 review: improve legibility of approved tour content, without layout or image changes. */
+body .v37-detailpage .v37-demo-section .info-para,
+body .v37-detailpage .v37-demo-section .bullets,
+body .v37-detailpage .v37-detail-block p,
+body .v37-detailpage .v37-detail-block li,
+body .v37-detailpage .v37-detail-block ul,
+body .v37-detailpage .v37-demo-section .v37-highlighttile p,
+body .v37-detailpage .v37-demo-section .mini-info {
+  font-size:17px!important;
+  line-height:1.7!important;
+}
+body .v37-detailpage .v37-demo-section .disclaimer {
+  font-size:16px!important;
+  line-height:1.65!important;
+}
+body .v37-detailpage .v37-demo-section h2,
+body .v37-detailpage .v37-detail-block h2 {
+  font-size:clamp(30px,2.7vw,34px)!important;
+}
+body .v37-how .v37-step p,
+body .v37-how .v37-step .v37-no + h3 + p {
+  font-size:17px!important;
+  line-height:1.65!important;
+}
+@media(max-width:650px) {
+  body .v37-detailpage .v37-demo-section .info-para,
+  body .v37-detailpage .v37-demo-section .bullets,
+  body .v37-detailpage .v37-detail-block p,
+  body .v37-detailpage .v37-detail-block li,
+  body .v37-detailpage .v37-detail-block ul,
+  body .v37-detailpage .v37-demo-section .v37-highlighttile p,
+  body .v37-detailpage .v37-demo-section .mini-info {font-size:16px!important;}
+  body .v37-how .v37-step p {font-size:16px!important;}
+}
+
+
+/* v37 owner update: hostel section emphasis + sitewide readability refinement */
+main .postcard .name,
+main .hostel-detail .inner-page-intro h1{
+  font-weight:700!important;
+}
+main .hostel-detail .detail-hero img{
+  object-fit:cover;
+}
+main p,
+main li,
+main .postcard small,
+main .room-preview p,
+main .facility p,
+main .review-platform span,
+main .section-heading p,
+main .section-text p,
+main .detail-text,
+main .badge-note,
+main .v37-card-body > p,
+main .v37-heading-row p,
+main .v37-step p,
+main .v37-detail-block p,
+main .v37-detail-block li,
+main .v37-highlighttile p,
+main .v37-booking p,
+main .v37-booking small,
+main .v37-faq details p,
+main .v37-demo-section .info-para,
+main .v37-demo-section .bullets,
+main .v37-demo-section .mini-info,
+main .v37-demo-section .disclaimer,
+main .v37-demo-section .qa p,
+main .v37-demo-section .v37-source-extra ul{
+  font-size:16.5px!important;
+  line-height:1.7!important;
+}
+main .crumb,
+main .v37-detailcrumb,
+main .v37-breadcrumbs{
+  font-size:16px!important;
+  line-height:1.65!important;
+}
+main .section-heading h2,
+main .section-text h2,
+main .life h2,
+main .facilities h2,
+main .review h2,
+main .v37-how h2,
+main .v37-heading-row h2,
+main .v37-detail-block h2,
+main .hostel-detail .stamp + h2,
+main .room-section h2,
+main .twohostels h2{
+  font-size:clamp(30px,2.7vw,34px)!important;
+  line-height:1.18!important;
+}
+@media(max-width:650px){
+  main p,
+  main li,
+  main .postcard small,
+  main .room-preview p,
+  main .facility p,
+  main .review-platform span,
+  main .section-heading p,
+  main .section-text p,
+  main .detail-text,
+  main .badge-note,
+  main .v37-card-body > p,
+  main .v37-heading-row p,
+  main .v37-step p,
+  main .v37-detail-block p,
+  main .v37-detail-block li,
+  main .v37-highlighttile p,
+  main .v37-booking p,
+  main .v37-booking small,
+  main .v37-faq details p,
+  main .v37-demo-section .info-para,
+  main .v37-demo-section .bullets,
+  main .v37-demo-section .mini-info,
+  main .v37-demo-section .disclaimer,
+  main .v37-demo-section .qa p,
+  main .v37-demo-section .v37-source-extra ul{font-size:16px!important;}
+  main .crumb,
+  main .v37-detailcrumb,
+  main .v37-breadcrumbs{font-size:15px!important;}
+}
+
+
+/* OWNER REVIEW 2026-10-16: footer readability and two separate property review groups. */
+.v37-footer p,
+.v37-footer a,
+.v37-footer .v37-footer-links a {font-size:16px!important;line-height:1.65!important;}
+.v37-footer h4 {font-size:17px!important;line-height:1.5!important;}
+.v37-footer .v37-footer-bottom {font-size:14px!important;line-height:1.6!important;}
+.v37-review-hostel-title {font:700 clamp(22px,2.2vw,28px)/1.3 'DM Serif Display',Georgia,serif;color:var(--v37-ink);margin:26px 0 22px;text-align:center;}
+.v37-review-hostel-title--second {margin-top:39px;}
+.v37-review-snapshot {max-width:720px!important;font-size:13px!important;line-height:1.5!important;color:#806f5e!important;margin:24px auto 0!important;text-align:center;}
+@media(max-width:650px){
+ .v37-footer p,.v37-footer a,.v37-footer .v37-footer-links a {font-size:15px!important;}
+ .v37-footer h4 {font-size:16px!important;}
+ .v37-footer .v37-footer-bottom {font-size:13px!important;}
+ .v37-review-hostel-title {font-size:23px!important;}
+ .v37-review-snapshot {font-size:12px!important;}
+}
+
+
+/* v37 2026-10-17: only six tour straplines and the three brown highlight headings.
+   12px × 1.2 = 14.4px; highlight headings remain larger than 16–17px copy. */
+.v37-bigcard .v37-meta,
+.v37-detailpage .v37-detail-hero .v37-eyebrow {
+  font-size:14.4px!important;
+  line-height:1.5!important;
+}
+.v37-detailpage .v37-highlighttile strong {
+  font-size:18px!important;
+  line-height:1.4!important;
+}
+
+/* v37 review, back-button and footer-contact polish (demo only) */
+.v37-return-home{display:inline-flex;align-items:center;gap:8px;font:700 16px/1.6 'DM Sans',Arial,sans-serif;color:#97663e;text-decoration:none;text-underline-offset:4px}
+.v37-return-home:hover,.v37-return-home:focus-visible{text-decoration:underline}
+.inner-page-intro .v37-return-home{margin:0 0 17px}
+.v37-return-life{max-width:1350px;margin:auto;padding:30px 5vw 0;position:relative}
+.v37-footer .v37-contact-links{display:flex;flex-direction:column;align-items:stretch;gap:13px;margin-top:13px}
+.v37-footer .v37-contact-item{display:flex;align-items:flex-start;gap:12px;color:#fff8ed;text-decoration:none;font:600 15px/1.5 'DM Sans',Arial,sans-serif;min-width:0;max-width:100%}
+.v37-footer a.v37-contact-item:hover,.v37-footer .v37-contact-emails a:hover{text-decoration:underline}
+.v37-footer .v37-contact-icon{flex:0 0 21px;width:21px;height:21px;margin-top:2px;color:#f4d9a3}
+.v37-footer .v37-contact-item span{min-width:0;overflow-wrap:anywhere}
+.v37-footer .v37-contact-emails{display:flex;flex-direction:column;gap:5px}
+.v37-footer .v37-contact-emails a{color:#fff8ed;text-decoration:none;font:600 15px/1.5 'DM Sans',Arial,sans-serif}
+.v37-footer .v37-contact-email{cursor:default}
+@media(max-width:650px){.v37-return-home{font-size:15px}.v37-return-life{padding:24px 7vw 0}.v37-footer .v37-contact-item,.v37-footer .v37-contact-emails a{font-size:15px}}
+
+/* v37 footer refinement — exactly three owner-requested adjustments */
+.v37-footer .v37-contact-email{align-items:center!important;}
+.v37-footer .v37-contact-email>.v37-contact-icon{margin-top:0!important;}
+.v37-footer .v37-footer-links a{color:#fff8ed!important;}
+
+
+/* Owner-approved v37 audit: align hostel section fonts, cap headings and improve small-label contrast. */
+body .hostel-detail .inner-page-intro h1,
+body .hostel-detail .room-preview h3,
+body .hostel-detail .detail-hero h2 {
+  font-family:'DM Serif Display',Georgia,serif!important;
+}
+body .hostel-detail .detail-hero h2 {
+  font-size:clamp(30px,2.7vw,34px)!important;
+  line-height:1.18!important;
+}
+body .v37-card-body .v37-meta,
+body .v37-detailpage .v37-detail-hero .v37-eyebrow {
+  color:#6D503B!important;
+}
+
+/* v37 owner review: clear hostel-building pictogram (two windows + entrance door).
+   Only replaces the Hostel label icon, and keeps approved booking bar layout intact. */
+#check-availability .booking-cell.is-hostel .booking-caption::before {
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%23291f15%22%20stroke-width%3D%221.8%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Crect%20x%3D%224%22%20y%3D%223%22%20width%3D%2216%22%20height%3D%2218%22%20rx%3D%221.5%22%2F%3E%3Cpath%20d%3D%22M9%2021v-5h6v5M8%207h2M14%207h2M8%2011h2M14%2011h2%22%2F%3E%3C%2Fsvg%3E") !important;
+}
+
+
+/* Hide demo badge to avoid overlap on mobile preview */
+.v37-demo-corner{display:none!important}
